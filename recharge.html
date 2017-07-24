@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>充值中心</title>
+
+    <!-- style-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--JS-->
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/recharge.js"></script>
+</head>
+<body>
+    <div class="header" id="header"></div>
+
+    <div class="container clearfix">
+        <div class="left-menu">
+            <div class="user-image">
+                <img src="images/user-face.jpg" alt="">
+                <div class="caption">您好，徐祥</div>
+            </div>
+            <div class="menu-box" id="menu-box"></div>
+        </div>
+        <div class="right-body">
+            <!--<div class="main-head"></div>-->
+
+            <div class="main-body">
+                <!--选择充值 tab-->
+                <!--<div class="cus-tab">
+                    <ul class="tab-list">
+                        <li class="active"><a href="javasctip:void(0);">千币充值</a></li>
+                        <li><a href="javasctip:void(0);">充值套餐</a></li>
+                    </ul>
+                    <tab-content-box>
+                        <div class="tab-panel"></div>
+                        <div class="tab-panel"></div>
+                    </tab-content-box>
+                </div>-->
+                <div class="tab" id="tab-recharge-type">
+                    <ul class="tab-list">
+                        <li class="active"><a href="javascript:void(0);">千币充值</a></li>
+                        <li><a href="javascript:void(0);">充值套餐</a></li>
+                    </ul>
+                    <div class="tab-content-box">
+                        <div class="tab-content active">
+                            <div class="list-group">
+                                <label for="">充值金额：</label>
+                                <input id="recharge_money" type="text" value="1" placeholder="1">元<span class="small">(1元起充)</span>
+                            </div>
+                            <div class="list-group">
+                                <label for="">可获得千币：</label>
+                                <span class="k-coin" id="k-coin"></span>
+                            </div>
+                            <div class="list-group">
+                                <label for="">选择支付方式：</label>
+                                <div class="recharge-type">
+                                    <a href="javascript:void(0);" class="type alipay"><img src="images/alipay-img.png" alt="支付宝支付"></a>
+                                    <a href="javascript:void(0);" class="type wxpay"><img src="images/wxpay-img.png" alt="微信支付"></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-content">
+                            <div class="package">
+                                
+                                <div class="package-item">
+                                    <input type="radio" name="package" class="package" for="item1">
+                                    <span class="cost">100</span>
+                                    <span class="cost-unit">元</span>
+                                    <span class="p-title">套餐一:</span>
+                                    <span class="p-coin p1-coin">700</span>千币+
+                                    <span class="p-ticket p1-ticket">13</span>张下载券
+                                    <span class="small">省9元</span>
+                                </div>
+                                <div class="package-item">
+                                    <input type="radio" name="package" class="package">
+                                    <span class="cost">500</span>
+                                    <span class="cost-unit">元</span>
+                                    <span class="p-title">套餐二:</span>
+                                    <span class="p-coin p2-coin">300</span>千币+
+                                    <span class="p-ticket p2-ticket">83</span>张下载券
+                                    <span class="small">省50元</span>
+                                </div>
+                                <div class="package-item">
+                                    <input type="radio" name="package" class="package">
+                                    <span class="cost">1200</span>
+                                    <span class="cost-unit">元</span>
+                                    <span class="p-title">套餐三:</span>
+                                    <span class="p-coin p3-coin">3000</span>千币+
+                                    <span class="p-ticket p3-ticket">177</span>张下载券
+                                    <span class="small">省130元</span>
+                                </div>
+                                <div class="package-item">
+                                    <input type="radio" name="package" class="package">
+                                    <span class="cost">5000</span>
+                                    <span class="cost-unit">元</span>
+                                    <span class="p-title">套餐四:</span>
+                                    <span class="p-coin p4-coin">25000</span>千币+
+                                    <span class="p-ticket p4-ticket">1038</span>张下载券
+                                    <span class="small">省600元</span>
+                                </div>
+                            </div>
+                            <div class="list-group">
+                                <label for="">选择支付方式：</label>
+                                <div class="recharge-type">
+                                    <a href="javascript:void(0);" class="type alipay"><img src="images/alipay-img.png" alt="支付宝支付"></a>
+                                    <a href="javascript:void(0);" class="type wxpay"><img src="images/wxpay-img.png" alt="微信支付"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="recharge-intr">
+                    <h3>充值说明：</h3>
+                    <p class="intr-item">1、1元=10千模币</p>
+                    <p class="intr-item">2、可下载千模网所有模型</p>
+                    <p class="intr-item">3、充值成功后，千币没有到帐请联系QQ：123312312</p>
+                </div>
+                <div class="advertistment-box clearfix">
+                    <div class="adv-item"><a href="javascript:void(0);"><img src="images/user-info2.jpg" alt="advertistment"></a></div>
+                    <div class="adv-item"><a href="javascript:void(0);"><img src="images/user-info2.jpg" alt="advertistment"></a></div>
+                    <div class="adv-item"><a href="javascript:void(0);"><img src="images/user-info2.jpg" alt="advertistment"></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer" id="footer"></div>
+</body>
+</html>

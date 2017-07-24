@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>上传模型</title>
+
+    <!-- style-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!--JS-->
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/recharge.js"></script>
+
+    <!--select2-->
+    <!--<link rel="stylesheet" href="select2-4.0.3/css/select2.min.css">
+    <script src="select2-4.0.3/js/select2.full.min.js" ></script>-->
+</head>
+<body>
+    <div class="header" id="header"></div>
+    
+    <div class="container clearfix">
+        <div class="left-menu">
+            <div class="user-image">
+                <img src="images/user-face.jpg" alt="">
+                <div class="caption">您好，徐祥</div>
+            </div>
+            <div class="menu-box" id="menu-box"></div>
+        </div>
+        <div class="right-body">
+            <!--<div class="main-head"></div>-->
+
+            <div class="main-body">
+                
+                <div class="tab" id="tab-recharge-type">
+                    <ul class="tab-list">
+                        <li class="active"><a href="javascript:void(0);">上传模型</a></li>
+                        <li><a href="javascript:void(0);">上传共享模型</a></li>
+                        <span class="up-text">上传模型和图片5：5分成，上传模型没有图片3：7分成</span>
+                    </ul>
+                    <div class="tab-content-box">
+                        <div class="tab-content active clearfix">
+                            <table class="record-table up-mod" id="record-table">
+                                <tr id="thead">
+                                    <th>名称</th>
+                                    <th>图片<span class="must">*</span></th>
+                                    <th>模型附件<span class="must">*</span></th>
+                                    <th>定价</th>
+                                    <th>状态</th>
+                                    <th>操作</th>
+                                </tr>
+                                <tr class="upload-mod-tr">
+                                    <td><input type="text" placeholder="请输入模型名称"></td>
+                                    <td>
+                                        <p><img src="images/default.png" alt=""></p>
+                                        <p><input type="file" name="file"></p>
+                                    </td>
+                                    <td><input type="text" name="mod-name" placeholder="请输入模型附件"></td>
+                                    <td><input type="text" name="mod-price" placeholder="请定价"></td>
+                                    
+                                    <td class="status">未上传</td>
+                                    <td class="gear">
+                                        <a href="javascript:void(0);"><i class="fa fa-upload"></i>上传</a>
+                                        <a href="javascript:void(0);" class="del-modTd"><i class="fa fa-trash"></i>删除</a>
+                                    </td>
+                                </tr>
+                                <tr class="upload-mod-tr2">
+                                    <td colspan="3" class="mod-linkTd" style="border-right:none;">
+                                        <input type="text" class="mod-linkAddress" name="mod-linkAddress" placeholder="请输入模型在其他网站审核通过后展示的链接，这样有利于此模型直接通过。">
+                                    </td>
+                                    <td colspan="3" style="border-left:none;">
+                                        <label class="render-label" for=""><input type="checkbox" id="" name="checkRender" value="渲染器CR">渲染器CR</label>
+                                        <label class="render-label" for=""><input type="checkbox" name="checkRender" id="" value="渲染器VR">渲染器VR</label>
+                                        <label class="render-label" for=""><input type="checkbox" name="checkRender" id="" value="有灯光">有灯光</label>
+                                        <label class="render-label" for=""><input type="checkbox" name="checkRender" id="" value="有材质">有材质</label>
+                                        <select name="version" id="sel-version1" class="select2">
+                                            <option value="2010">2010</option>
+                                            <option value="2012" selected="selected">2012</option>
+                                            <option value="2014">2014</option>
+                                            <option value="2016">2016</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                            </table>
+                            <a href="javascript:void(0);" class="btn btn-addone">增加一个</a>
+                        </div>
+                        <div class="tab-content clearfix">
+                            <table class="record-table up-mod" id="record-table">
+                                <tr>
+                                    <th>名称</th>
+                                    <th>图片<span class="must">*</span></th>
+                                    <th>模型附件<span class="must">*</span></th>
+                                    <th>定价</th>
+                                    <th>状态</th>
+                                    <th>操作</th>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" placeholder="请输入模型名称"></td>
+                                    <td>
+                                        <p><img src="images/default.png" alt=""></p>
+                                        <p><input type="file" name="file"></p>
+                                    </td>
+                                    <td><input type="text" name="mod-name" placeholder="请输入模型附件"></td>
+                                    <td><input type="number" name="mod-price" placeholder="请定价"></td>
+                                    
+                                    <td class="status">未上传</td>
+                                    <td class="gear">
+                                        <a href="javascript:void(0);"><i class="fa fa-upload"></i>上传</a>
+                                        <a href="javascript:void(0);" class="del-modTd"><i class="fa fa-trash"></i>删除</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3" class="mod-linkTd" style="border-right:none;">
+                                        <input type="text" class="mod-linkAddress" name="mod-linkAddress" placeholder="请输入模型在其他网站审核通过后展示的链接，这样有利于此模型直接通过。">
+                                    </td>
+                                    <td colspan="3" style="border-left:none;">
+                                        <label class="render-label" for="render1"><input type="checkbox" name="checkRender" id="render1" value="渲染器CR">渲染器CR</label>
+                                        <label class="render-label" for="render2"><input type="checkbox" name="checkRender" id="render2" value="渲染器VR">渲染器VR</label>
+                                        <label class="render-label" for="render3"><input type="checkbox" name="checkRender" id="render3" value="有灯光">有灯光</label>
+                                        <label class="render-label" for="render4"><input type="checkbox" name="checkRender" id="render4" value="有材质">有材质</label>
+                                        <select name="version" id="sel-version1" class="select2">
+                                            <option value="2010">2010</option>
+                                            <option value="2012" selected="selected">2012</option>
+                                            <option value="2014">2014</option>
+                                            <option value="2016">2016</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <select name="sel-site" id="sel-site" class="select2">
+
+                                            <option value="2011">www.aaa.com</option>
+                                            <option value="2012" selected="selected">www.bbb.com</option>
+                                        </select>
+                                    </td>
+                                    <td><input type="text" placeholder="模型ID" ><a href="javascript:void(0);" class="search">搜索</a></td>
+                                </tr>
+                            </table>
+                            <a href="javascript:void(0);" class="btn btn-addone">增加一个</a>
+                        </div>
+
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer" id="footer"></div>
+</body>
+</html>

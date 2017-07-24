@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>上传记录</title>
+
+    <!-- style-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--JS-->
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/recharge.js"></script>
+    <script src="js/userInfo.js"></script>
+</head>
+<body>
+    <div class="header" id="header"></div>
+    
+    <div class="container clearfix">
+        <div class="left-menu">
+            <div class="user-image">
+                <img src="images/user-face.jpg" alt="">
+                <div class="caption">您好，徐祥</div>
+            </div>
+            <div class="menu-box" id="menu-box"></div>
+        </div>
+        <div class="right-body">
+            <!--<div class="main-head"></div>-->
+
+            <div class="main-body">
+                
+                <div class="tab" id="tab-recharge-type">
+                    <ul class="tab-list">
+                        <li class="active"><a href="javascript:void(0);">上传记录</a></li>
+                        
+                        <div class="search-box">
+                            <input type="text" value="" placeholder="输入ID" />
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </div>
+                    </ul>
+                    <div class="tab-content-box">
+                        
+                        <div class="tab-content active">
+                            
+                            <table class="record-table" id="record-table">
+                                <tr id="thead">
+                                    <th>id</th>
+                                    <th>名称</th>
+                                    <th>图片</th>
+                                    <th>定价</th>
+                                    <th>上架时间</th>
+                                    <th>下载次数</th>
+                                    <th>状态</th>
+                                    <th>操作</th>
+                                </tr>
+                                <tr>
+                                    <td>1233</td>
+                                    <td>桌子模型</td>
+                                    <td><p><img src="images/default.png" alt=""></p></td>
+                                    <td>35</td>
+                                    <td>2017-07-01 19:32:16</td>
+                                    <td>12</td>
+                                    <td class="status">审核通过</td>
+                                    <td class="option">删除</td>
+                                </tr>
+                                <tr>
+                                    <td>1233</td>
+                                    <td>桌子模型</td>
+                                    <td><p><img src="images/default.png" alt=""></p></td>
+                                    <td>35</td>
+                                    <td>2017-07-01 19:32:16</td>
+                                    <td>12</td>
+                                    <td class="status">审核不通过
+                                        <p>你的模型和图片不匹配</p>
+                                    </td>
+                                    <td class="option">删除</td>
+                                </tr>
+                                
+                            </table>
+                        </div>
+                        <div class="tab-content">
+                            <!--<div class="filter-box">
+                                <span class="active filter all">全部</span>
+                                <span class="filter spend">消费</span>
+                                <span class="filter earn">赚取</span>
+                            </div>-->
+                            <table class="record-table" id="record-table">
+                                <tr id="thead">
+                                    <th>id</th>
+                                    <th>明细名称</th>
+                                    <th>订单号</th>
+                                    <th>价格</th>
+                                    <th>类型</th>
+                                    <th>消费详情</th>
+                                    <th>状态</th>
+                                    <th>操作</th>
+                                </tr>
+                                <tr>
+                                    <td>1233</td>
+                                    <td>千币消费</td>
+                                    <td>dd-201706051231231-1</td>
+                                    <td>35</td>
+                                    <td>购买模型</td>
+                                    <td>购买：现代双人床床头柜3D模型
+                                        <p>ID：323769</p>
+                                    </td>
+                                    <td>完成</td>
+                                    <td>删除</td>
+                                </tr>
+                                <tr>
+                                    <td>1233</td>
+                                    <td>千币赚取</td>
+                                    <td>dd-201706051231231-1</td>
+                                    <td>35</td>
+                                    <td>购买模型</td>
+                                    <td>购买：现代双人床床头柜3D模型
+                                        <p>ID：323769</p>
+                                    </td>
+                                    <td>完成</td>
+                                    <td>删除</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="tab-content">
+                            <!--<div class="filter-box">
+                                <span class="active filter all">全部</span>
+                                <span class="filter spend">消费</span>
+                                <span class="filter earn">赚取</span>
+                            </div>-->
+                            <table class="record-table" id="record-table">
+                                <tr id="thead">
+                                    <th>id</th>
+                                    <th>明细名称</th>
+                                    <th>订单号</th>
+                                    <th>价格</th>
+                                    <th>类型</th>
+                                    <th>消费详情</th>
+                                    <th>状态</th>
+                                    <th>操作</th>
+                                </tr>
+                                <tr>
+                                    <td>1233</td>
+                                    <td>千币消费</td>
+                                    <td>dd-201706051231231-1</td>
+                                    <td>35</td>
+                                    <td>购买模型</td>
+                                    <td>购买：现代双人床床头柜3D模型
+                                        <p>ID：323769</p>
+                                    </td>
+                                    <td>完成</td>
+                                    <td>删除</td>
+                                </tr>
+                                <tr>
+                                    <td>1233</td>
+                                    <td>千币赚取</td>
+                                    <td>dd-201706051231231-1</td>
+                                    <td>35</td>
+                                    <td>购买模型</td>
+                                    <td>购买：现代双人床床头柜3D模型
+                                        <p>ID：323769</p>
+                                    </td>
+                                    <td>完成</td>
+                                    <td>删除</td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        
+                    </div>
+                </div>
+                <div class="pagination">
+                    <ul class="page-menu clearfix">
+                        <li>首页</li>
+                        <li>上一页</li>
+                        <div class="page-obj">
+                            <a class="active" href="javascript:void(0);">1</a>
+                            <a href="javascript:void(0);">2</a>
+                            <a href="javascript:void(0);">3</a>
+                            <a href="javascript:void(0);">4</a>
+                            <a href="javascript:void(0);" class="dot">...</a>
+                        </div>
+                        <li>下一页</li>
+                        <li>尾页</li>
+                        <li class="input-page"><input type="text"></li>
+                        <a href="javascript:void(0);" class="go">跳页</a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer" id="footer"></div>
+</body>
+</html>

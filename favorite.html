@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>收藏中心</title>
+
+    <!-- style-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="plugins/jquery-dialogBox/css/jquery.dialogbox.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--JS-->
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/userInfo.js"></script>
+    
+</head>
+<body>
+    <div class="header" id="header"></div>
+
+    <div class="container clearfix">
+        <div class="left-menu">
+            <div class="user-image">
+                <img src="images/user-face.jpg" alt="">
+                <div class="caption">您好，徐祥</div>
+            </div>
+            <div class="menu-box" id="menu-box"></div>
+        </div>
+        <div class="right-body">
+            <div class="main-head">
+                <div class="head-title clearfix">
+                    <h3 class="title">收藏</h3>
+                    <p class="options fl-right">
+                        <a href="javascript:void(0);" class="cate-option add-cate" id="add-cate">添加分类</a>
+                        <a href="javascript:void(0);" class="cate-option update-cate" id="update-cate">修改分类</a>
+                        <a href="javascript:void(0);" class="cate-option delete-cate" id="delete-cate">删除分类</a>
+                    </p>
+                    <div id="btn-dialogBox"></div>
+                </div>
+                <div class="cate-box">
+                    <label for="" class="label">分类：</label>
+                    <a href="javascript:void(0);" class="item">
+                        全部
+                        <span class="mate">(123)</span>
+                    </a>
+                    <a href="javascript:void(0);" class="item">
+                        默认分类
+                        <span class="mate">(122)</span>
+                    </a>
+                    <a href="javascript:void(0);" class="item">
+                        桌子模型
+                        <span class="mate">(12)</span>
+                    </a>
+                </div>
+                <div class="cate-box cate-box2">
+                    <label for="" class="label">操作</label>
+                    <a href="javascript:void(0);" class="item item2">批量删除</a>
+                    <a href="javascript:void(0);" class="item">
+                        批量转移分类
+                        <i class="fa fa-caret-down"></i>
+                    </a>
+                </div>
+                
+            </div>
+            <div class="main-body">
+                <div class="advertistment-box clearfix">
+                    <div class="adv-item">
+                        <a href="javascript:void(0);">
+                            <img src="images/user-info2.jpg" alt="advertistment">
+                        </a>
+                        <i class="fa fa-square-o"></i><i class="fa fa-trash-o"></i>
+                    </div>
+                    <div class="adv-item">
+                        <a href="javascript:void(0);">
+                            <img src="images/user-info2.jpg" alt="advertistment">
+                        </a>
+                        <i class="fa fa-square-o"></i><i class="fa fa-trash-o"></i>
+                    </div>
+                    <div class="adv-item">
+                        <a href="javascript:void(0);">
+                            <img src="images/user-info2.jpg" alt="advertistment">
+                        </a>
+                        <i class="fa fa-square-o"></i><i class="fa fa-trash-o"></i>
+                    </div>
+                </div>
+
+                <div class="pagination">
+                    <ul class="page-menu clearfix">
+                        <li>首页</li>
+                        <li>上一页</li>
+                        <div class="page-obj">
+                            <a class="active" href="javascript:void(0);">1</a>
+                            <a href="javascript:void(0);">2</a>
+                            <a href="javascript:void(0);">3</a>
+                            <a href="javascript:void(0);">4</a>
+                            <a href="javascript:void(0);" class="dot">...</a>
+                        </div>
+                        <li>下一页</li>
+                        <li>尾页</li>
+                        <li class="input-page"><input type="text"></li>
+                        <a href="javascript:void(0);" class="go">跳页</a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer" id="footer"></div>
+    <!--jq dialogbox 弹出框-->
+    <script src="plugins/jquery-dialogBox/js/jquery.dialogBox.js" ></script>
+    <script src="js/dialog.js"></script>
+</body>
+</html>

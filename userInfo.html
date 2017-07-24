@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>个人中心 -- 个人信息</title>
+
+    <!-- style-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="plugins/jquery-dialogBox/css/jquery.dialogbox.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--JS-->
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <!--jq dialogbox 弹出框-->
+    <script src="plugins/jquery-dialogBox/js/jquery.dialogBox.js" ></script>
+    <script src="js/common.js"></script>
+    <script src="js/userInfo.js"></script>
+    
+</head>
+<body>
+    <div class="header" id="header"></div>
+    <div class="container clearfix">
+        <div class="left-menu">
+            <div class="user-image">
+                <img src="images/user-face.jpg" alt="">
+                <div class="caption">您好，徐祥</div>
+            </div>
+            <div class="menu-box" id="menu-box"></div>
+        </div>
+        <div class="right-body">
+            <div class="main-head">
+                <div class="user-name">
+                    欢迎，<span class="welcome">张三</span>
+                    <a href="vip.html" class="vip">开通VIP</a>
+                    <span class="sign">签到</span>
+                </div>
+                <div class="user-wallet clearfix">
+                    <ul class="item-box">
+                        <li class="item">
+                            <div class="wallet-info">
+                                <label for="coin">千&nbsp;&nbsp;&nbsp;币：</label>
+                                <span class="coin" id="coin">234</span>个，其中可提现千币
+                                <span class="crash-coin">0</span>个
+                            </div>
+                            <a href="recharge.html" class="option">充值</a>
+                        </li>
+                        <li class="item">
+                            <div class="wallet-info">
+                                <label for="ticket">下载券：</label>
+                                <span class="coin" id="ticket">234</span>个
+                            </div>
+                            <a href="vip.html" class="option">获取</a>
+                        </li>
+                        <li class="item">
+                            <div class="wallet-info">
+                                <label for="coin">积&nbsp;&nbsp;&nbsp;分：</label>
+                                <span class="coin" id="coin">21</span>分
+                            </div>
+                            <a href="javascript:void(0);" class="option">签到可获取积分</a>
+                        </li>
+                    </ul>
+                    <div class="calendar-box">
+                        <div class="calendar-head"></div>
+                        <table style="width: 100%;"><tr><td>周日</td><td>周一</td><td>周二</td><td>周三</td><td>周四</td><td>周五</td><td>周六</td></tr></table>
+                        <div id="calendar"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-body">
+                <div class="info-item">
+                    <div class="left-part">
+                        <label for="">用户头像:</label>
+                        <img class="user-face" src="images/user-face.jpg" alt="">
+                    </div>
+                    <div class="right-part" ><a class="open_file" href="###" style="line-height: 120px;">修改</a></div>
+                    <input type="file" id="btn_file" name="user-img" style="display:none">
+                </div>
+                <div class="info-item item-common">
+                    <div class="left-part">
+                        <label for="">昵&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;称:</label>
+                        <span class="nick-name">XUXIANG</span>
+                    </div>
+                    <div class="middle-part">
+                        <p>用于前台展示，不能用于登录</p>
+                    </div>
+                    <div class="right-part" id="update_nickname"><a href="javascript:void(0);">修改</a></div>
+                    <div id="btn-update"></div>
+                </div>
+                <div class="info-item item-common">
+                    <div class="left-part">
+                        <label for="">安全邮箱:</label>
+                    </div>
+                    <div class="middle-part">
+                        <p>安全邮箱可以用于登录千模网账号，重置密码或其它安全验证</p>
+                    </div>
+                    <div class="right-part" id="update_email"><a href="javascript:void(0);">绑定/修改</a></div>
+                </div>
+                <div class="info-item item-common">
+                    <div class="left-part">
+                        <label for="">安全手机:</label>
+                    </div>
+                    <div class="middle-part">
+                        <p>安全手机可以用于登录千模网账号，重置密码或其它安全验证</p>
+                    </div>
+                    <div class="right-part" id="update_phone"><a href="javascript:void(0);">修改</a></div>
+                </div>
+                <div class="info-item item-common">
+                    <div class="left-part">
+                        <label for="">帐号密码:</label>
+                    </div>
+                    <div class="middle-part">
+                        <p>用于保护账号信息和登录安全</p>
+                    </div>
+                    <div class="right-part" id="update_password"><a href="javascript:void(0);">修改</a></div>
+                </div>
+
+                <div class="advertistment-box clearfix">
+                    <div class="adv-item"><a href="javascript:void(0);"><img src="images/user-info2.jpg" alt="advertistment"></a></div>
+                    <div class="adv-item"><a href="javascript:void(0);"><img src="images/user-info2.jpg" alt="advertistment"></a></div>
+                    <div class="adv-item"><a href="javascript:void(0);"><img src="images/user-info2.jpg" alt="advertistment"></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer" id="footer"></div>
+    <script src="js/calendar.js"></script>
+</body>
+</html>

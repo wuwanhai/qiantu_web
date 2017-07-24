@@ -1,0 +1,100 @@
+@charset "UTF-8";
+/* 閫氱敤鏍峰紡 */
+div, img, p, span, a {
+  margin: 0;
+  padding: 0; }
+
+a,
+a:focus,
+a:visited,
+a:active {
+  text-decoration: none; }
+
+a {
+  color: #7a7a7a; }
+
+ul, li {
+  list-style: none; }
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Microsoft Yahei";
+  background-color: #f2f2f2;
+  font-size: 18px;
+  color: #7a7a7a; }
+
+.clearfix {
+  zoom: 1; }
+
+.clearfix:after {
+  visibility: hidden;
+  height: 0;
+  display: block;
+  content: " ";
+  clear: both; }
+
+/* 缁撴瀯鏍峰紡 */
+.container {
+  width: 1500px;
+  margin: 0 auto;
+  margin-top: 12px; }
+
+.container .left-menu,
+.container .right-body {
+  float: left; }
+
+.container .left-menu {
+  width: 220px;
+  background-color: #fff;
+  margin-left: 12px; }
+
+.container .right-body {
+  width: 1268px; }
+
+/* 鐢ㄦ埛澶村儚 */
+.user-image {
+  text-align: center;
+  overflow: hidden;
+  padding: 12px 0px; }
+
+.user-image img {
+  width: auto;
+  max-width: 130px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%; }
+
+.user-image > .caption {
+  text-align: center;
+  margin-top: 16px; }
+
+/* 宸︿晶鑿滃崟 */
+.menu-box ul {
+  padding-left: 0; }
+
+.menu-box ul li a {
+  display: block;
+  border-left: 2px solid transparent;
+  line-height: 64px;
+  text-align: center;
+  color: #505050; }
+
+.menu-box ul li.active a {
+  background-color: #0099ff;
+  color: #fff; }
+
+.menu-box ul li.active a:hover {
+  color: #505050; }
+
+.menu-box ul li a:hover {
+  border-color: #0099ff;
+  background-color: #e8e8e8; }
+
+.menu-box ul li a i.fa {
+  margin-right: 10px; }
+
+/*# sourceMappingURL=style.css.map */
